@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27205.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipLargeFile", "ZipLargeFile\ZipLargeFile.csproj", "{6A0F9A26-6759-410F-B3B3-08E5DE200ABE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV_Generator", "CSV_Generator\CSV_Generator.csproj", "{720A61CB-DCB7-4211-9F89-101974D5114F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSV_Generator", "CSV_Generator\CSV_Generator.csproj", "{720A61CB-DCB7-4211-9F89-101974D5114F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargeFileSamples", "LargeFileSamples\LargeFileSamples.csproj", "{15CF4E72-782F-41BB-A984-298E2E0E659C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{720A61CB-DCB7-4211-9F89-101974D5114F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{720A61CB-DCB7-4211-9F89-101974D5114F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{720A61CB-DCB7-4211-9F89-101974D5114F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15CF4E72-782F-41BB-A984-298E2E0E659C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15CF4E72-782F-41BB-A984-298E2E0E659C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15CF4E72-782F-41BB-A984-298E2E0E659C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15CF4E72-782F-41BB-A984-298E2E0E659C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

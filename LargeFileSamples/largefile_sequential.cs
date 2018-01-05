@@ -10,7 +10,8 @@ namespace ZipLargeFile
     {
         private static List<int> answers = new List<int>();
         [FunctionName("largefile_sequential")]
-        public static async Task RunAsync([BlobTrigger("largecsv/{name}")]Stream blob, string name, TraceWriter log, [Blob("largecsvanswers/{name}", FileAccess.Write)]Stream answerBlob)
+        public static async Task RunAsync([BlobTrigger("largecsv/{name}"), Disable()]Stream blob, string name, TraceWriter log, 
+            [Blob("largecsvanswers/{name}", FileAccess.Write)]Stream answerBlob)
         {
             log.Info($"C# Blob trigger function Processed blob\n Name:{name} \n Size: {blob.Length} Bytes");
 
