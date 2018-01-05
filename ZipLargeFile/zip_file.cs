@@ -5,10 +5,10 @@ using Microsoft.Azure.WebJobs.Host;
 
 namespace ZipLargeFile
 {
-    public static class zipfolder
+    public static class zip_file
     {
-        [FunctionName("zipfolder")]
-        public static void Run([BlobTrigger("largeitems/{name}")]Stream blob, string name, TraceWriter log, [Blob("largezips/{name}.zip", FileAccess.Write)] Stream outputblob)
+        [FunctionName("zip_file")]
+        public static void Run([BlobTrigger("largeitems/{name}"), Disable()]Stream blob, string name, TraceWriter log, [Blob("largezips/{name}.zip", FileAccess.Write)] Stream outputblob)
         {
             log.Info($"C# Blob trigger function Processed blob\n Name:{name} \n Size: {blob.Length} Bytes");
             using (var archive = new ZipArchive(outputblob, ZipArchiveMode.Create, true))
